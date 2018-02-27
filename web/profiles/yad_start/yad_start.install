@@ -1,0 +1,32 @@
+<?php
+/**
+ * @file
+ * Install, update and uninstall functions for the YAD_START install profile.
+ */
+
+/**
+ * Implements hook_install().
+ *
+ * Perform actions to set up the site for this profile.
+ *
+ * @see system_install()
+ */
+function yad_start_install() {
+    // First, do everything in standard profile.
+    include_once DRUPAL_ROOT . '/core/profiles/standard/standard.install';
+    standard_install();
+
+    // Can add code in here to make nodes, terms, etc.
+    //Set Seven as Admin Theme
+    \Drupal::configFactory()
+        ->getEditable('system.theme')
+        ->set('admin', 'seven')
+        ->save();
+
+    //SET YAD BASE as default theme -> create theme. Change to YAD_SITE
+    /*\Drupal::configFactory()
+        ->getEditable('system.theme')
+        ->set('default', 'yad_base')
+        ->save();
+    */
+}

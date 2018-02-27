@@ -27,36 +27,37 @@ dependencies:
   - block_content
   - breakpoint
   - ckeditor
-  - color
-  - comment
   - config
-  - contact
   - contextual
   - datetime
   - dblog
   - dynamic_page_cache
   - editor
+  - entity_reference
+  - field
   - field_ui
   - file
   - help
   - history
   - image
-  - link
+  - layout_discovery
   - menu_link_content
   - menu_ui
   - node
   - options
   - page_cache
   - path
-  - quickedit
-  - rdf
+  = responsive_image
   - search
   - shortcut
+  - syslog
   - taxonomy
   - text
   - toolbar
   - views
   - views_ui
+
+  #contrib
   - admin_toolbar
   - admin_toolbar_tools
   - config_update
@@ -88,3 +89,4 @@ dependencies:
 # Note that this will not set any theme as the default theme.
 themes:
   - seven
+  - bartik
