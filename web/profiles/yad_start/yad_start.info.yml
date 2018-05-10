@@ -47,7 +47,7 @@ dependencies:
   - options
   - page_cache
   - path
-  = responsive_image
+  - responsive_image
   - search
   - shortcut
   - syslog
@@ -61,25 +61,35 @@ dependencies:
   - admin_toolbar
   - admin_toolbar_tools
   - config_update
-  - contribute
   - ctools
   - draggableviews
+  - dropzonejs
+  - easy_breadcrumb
   - editor_advanced_link
+  - embed
+  - entity_browser
+  - entity_embed
   - entity_reference_revisions
-  - features
+  - field_group
+  - file_browser
   - honeypot
+  - lazyloader
+  - libraries
   - linkit
   - metatag
   - paragraphs
   - pathauto
+  - recreate_block_content
   - redirect
   - redirect_404
+  - svg_image
   - token
   - viewsreference
   - webform
   - webform_bootstrap
   - webform_node
   - webform_ui
+  - xmlsitemap
   
   
 
