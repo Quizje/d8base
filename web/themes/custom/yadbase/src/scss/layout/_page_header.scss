@@ -1,0 +1,67 @@
+header[role="banner"] {
+  border-bottom: 5px solid $color-secondary;
+  @extend .navbar;
+  @extend .navbar-expand-lg;
+  @extend .navbar-dark;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 1030;
+  background-color: $white;
+
+  .toolbar-fixed & {
+    position: static;
+  }
+
+  > div {
+    @extend .container;
+  }
+
+  .navbar-toggler-icon {
+    background: url(../images/icon-menu-closed.svg);
+    background-size: cover;
+  }
+  .menu-open & {
+    .navbar-toggler-icon {
+      background-image: url(../images/icon-menu-open.svg);
+    }
+  }
+}
+.region-header {
+  @extend .d-flex;
+
+  .block-language{
+    @extend .d-lg-none;
+  }
+
+  @include media-breakpoint-up(lg) {
+    flex-grow: 1;
+  }
+}
+
+.region-nav {
+  flex-grow: 10;
+  @extend .d-flex;
+  @extend .flex-column;
+  @extend .flex-lg-row;
+}
+
+.region-above-content {
+  position: relative;
+  z-index: 10;
+
+
+  .block-paginatitel,
+  .block-kruimelpad {
+    @extend .container;
+  }
+  .block-views-blockpage-headers-block-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+  }
+}
+

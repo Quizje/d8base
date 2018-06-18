@@ -1,0 +1,31 @@
+.paragraph--type--usps {
+  @extend .container;
+
+  .field--name-field-usp {
+    @extend .row;
+    @extend .flex-column;
+    @extend .flex-md-row;
+    @extend .py-4;
+    @extend .py-md-0;
+
+    .field__item {
+      @extend .col;
+      @extend .mb-3;
+      @extend .mb-md-0;
+
+      font-family: $font-header;
+      font-weight: 400;
+      background: url(../images/icon-usp.svg) center left no-repeat;
+      min-height: 30px;
+      padding: 0 0 0 40px;
+
+      @include media-breakpoint-up(md) {
+        padding: 20px 0 20px 40px;
+      }
+
+      .bgt-light & {
+        filter: grayscale(10%) brightness(0)
+      }
+    }
+  }
+}

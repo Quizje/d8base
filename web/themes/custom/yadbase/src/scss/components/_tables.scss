@@ -1,0 +1,10 @@
+.overflow-parent .block-system-main-block {
+  overflow: auto;
+  max-width: 100%;
+}
+
+table {
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
+}

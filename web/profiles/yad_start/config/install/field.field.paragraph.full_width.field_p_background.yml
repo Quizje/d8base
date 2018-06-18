@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_background
+    - paragraphs.paragraphs_type.full_width
+  module:
+    - options
+id: paragraph.full_width.field_p_background
+field_name: field_p_background
+entity_type: paragraph
+bundle: full_width
+label: Background
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: none
+default_value_callback: ''
+settings: {  }
+field_type: list_string

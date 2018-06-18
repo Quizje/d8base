@@ -1,0 +1,24 @@
+.field--name-field-button a {
+  @extend .btn;
+  @extend .btn-primary;
+}
+
+.btn-primary {
+  background-color: $main;
+  text-decoration: none;
+  border: none;
+  border-radius: 0;
+
+  &:hover {
+    background-color: darken($main, 15%);
+  }
+}
+.btn-secondary {
+  background-color: $white;
+  color: $main;
+}
+
+//Overrides
+.bgc-primary .field--name-field-button a{
+  @extend .btn-secondary;
+}

@@ -1,0 +1,32 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.full_width.field_column_content_fw
+    - field.field.paragraph.full_width.field_p_background
+    - paragraphs.paragraphs_type.full_width
+  module:
+    - entity_reference_revisions
+    - options
+id: paragraph.full_width.default
+targetEntityType: paragraph
+bundle: full_width
+mode: default
+content:
+  field_column_content_fw:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_p_background:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+hidden: {  }

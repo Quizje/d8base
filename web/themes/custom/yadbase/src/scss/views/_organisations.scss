@@ -1,0 +1,90 @@
+.view-id-organisations {
+  @extend .my-4;
+  @extend .pb-4;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.30);
+  border-radius: 10px;
+
+  .views-row {
+    @extend .py-3;
+    position: relative;
+
+    .views-field-field-region {
+      @extend .col-md-3;
+    }
+    .views-field-field-town {
+      @extend .col-md-3;
+    }
+    .views-field-title {
+      @extend .col-md-5;
+      @include rem(18);
+      font-weight: 700;
+
+      @include media-breakpoint-up(lg) {
+        font-weight: 400;
+        @include rem(16);
+      }
+    }
+    .views-field-field-postcode {
+      @extend .col-md-1;
+    }
+  }
+
+  .rows-header {
+    @extend .d-none;
+    @extend .d-lg-flex;
+    border-bottom: 2px solid $main;
+
+    .views-field {
+      color: $main;
+      font-weight: 700;
+    }
+  }
+
+  //Filters
+  .views-exposed-form {
+    @extend .bgc-primary;
+    @extend .bgt-dark;
+    @extend .row;
+    border-radius: 10px 10px 0 0;
+    height: 100%;
+    transition: height ease-in-out 0.3s;
+    overflow: hidden;
+    padding-top: 6px;
+
+    @include media-breakpoint-up(lg) {
+      padding-top: inherit;
+    }
+
+    label {
+      color: $white;
+    }
+    .form--inline {
+      @extend .col;
+    }
+    &.filters-hide {
+      height: 40px;
+      overflow: hidden;
+      transition: height ease-in-out 0.3s;
+    }
+  }
+}
+
+#block-defaultbannerviewspages {
+  p {
+    margin: 0;
+  }
+  height: 150px;
+
+  img {
+    height: 150px;
+    object-fit: cover;
+  }
+}
+
+.filters-toggle {
+  position: absolute;
+  z-index: 100;
+  top: 10px;
+  right: 10px;
+  color: $white;
+}

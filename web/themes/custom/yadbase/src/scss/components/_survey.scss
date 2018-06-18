@@ -1,0 +1,20 @@
+.webform-submission-klanttevredenheidsonderzoek-form {
+  > .form-item {
+    @extend .mb-5;
+
+    > label {
+      @extend h3;
+      color: $color-font;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .webform-likert-table th:first-child,
+    .webform-likert-table td:first-child {
+      width: 50%;
+    }
+  }
+}
+
+
+

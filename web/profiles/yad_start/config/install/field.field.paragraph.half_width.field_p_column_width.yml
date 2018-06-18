@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_p_column_width
+    - paragraphs.paragraphs_type.half_width
+  module:
+    - options
+id: paragraph.half_width.field_p_column_width
+field_name: field_p_column_width
+entity_type: paragraph
+bundle: half_width
+label: 'Column Width'
+description: ''
+required: true
+translatable: false
+default_value:
+  -
+    value: p--width-even
+default_value_callback: ''
+settings: {  }
+field_type: list_string

@@ -1,0 +1,50 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_content_components
+    - node.type.page
+    - paragraphs.paragraphs_type.full_width
+    - paragraphs.paragraphs_type.half_width
+  module:
+    - entity_reference_revisions
+id: node.page.field_content_components
+field_name: field_content_components
+entity_type: node
+bundle: page
+label: 'Content Components'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 0
+    target_bundles:
+      full_width: full_width
+      half_width: half_width
+    target_bundles_drag_drop:
+      views:
+        weight: 8
+        enabled: false
+      block:
+        weight: 9
+        enabled: false
+      call_to_action:
+        weight: 10
+        enabled: false
+      full_width:
+        enabled: true
+        weight: 11
+      half_width:
+        enabled: true
+        weight: 12
+      image:
+        weight: 13
+        enabled: false
+      text:
+        weight: 14
+        enabled: false
+field_type: entity_reference_revisions

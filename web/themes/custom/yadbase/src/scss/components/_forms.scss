@@ -1,0 +1,66 @@
+form {
+  select,
+  input[type=text],
+  input[type=password],
+  input[type=email],
+  input[type=url],
+  textarea {
+    max-width: 100%;
+    width: 100%;
+    border: 1px solid $color-border-darker;
+    box-shadow: inset 0 1px 1px 0 rgba(0,0,0,0.50);
+    border-radius: 3px;
+    line-height: 1.8;
+    color: $text;
+    min-height: 32px;
+    @extend .py-1;
+    @extend .px-2;
+    -webkit-appearance: none;
+  }
+
+  select {
+    background: #fff url(../images/select.png) calc(100% - 15px) 50% no-repeat;
+  }
+
+  label {
+    @extend h4;
+    color: $color-font;
+    @extend .mb-2;
+    font-weight: 400;
+    display: block;
+  }
+
+  input.button.button--primary {
+    @extend .btn;
+    @extend .btn-primary;
+    width: auto;
+  }
+}
+
+.views-exposed-form {
+  .form--inline {
+    @extend .d-lg-flex;
+    @extend .p-3;
+    flex-wrap: wrap;
+
+    .form-item {
+      float: none;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    .form--inline {
+      .form-item {
+        flex-grow: 20;
+      }
+      .form-item-field-postcode-value {
+        flex-grow: 5;
+      }
+      .js-form-item-items-per-page,
+      .form-actions {
+        flex-grow: 1;
+      }
+    }
+  }
+}
+

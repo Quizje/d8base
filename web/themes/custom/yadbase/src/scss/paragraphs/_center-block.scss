@@ -1,0 +1,8 @@
+.paragraph--type--center-block {
+  @extend .justify-content-center;
+
+  > img {
+    @extend .col-md-2;
+  }
+
+}

@@ -1,0 +1,27 @@
+{
+  "name": "eurogarant-base",
+  "version": "1.0.0",
+  "description": "gulp workflow for Drupal 8 theming",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1",
+    "browser-sync": "^2.18.13",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-babel": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-sass": "^4.0.1",
+    "gulp-sourcemaps": "^2.6.4"
+  },
+  "scripts": {
+    "postinstall": "find node_modules/ -name '*.info' -type f -delete"
+  },
+  "author": "Hilko <hilko.kolbeek@youaredigital.nl>",
+  "license": "ISC",
+  "dependencies": {
+    "babel-core": "^6.26.3",
+    "bootstrap": "^4.1.0",
+    "popper.js": "^1.14.3"
+  }
+}

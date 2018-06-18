@@ -1,0 +1,149 @@
+.navbar-wrapper {
+  width: 50%;
+  position: absolute;
+  @include media-breakpoint-up(lg) {
+    flex-grow: 10;
+    width: auto;
+    position: static;
+  }
+}
+.navbar-toggler {
+  outline: none !important;
+}
+
+.region-nav {
+  @extend .navbar-collapse;
+  @extend .offcanvas-collapse;
+  @extend .bgc-primary;
+  @extend .bgt-dark;
+  @extend .bgc-lg-none;
+  @extend .bgt-lg-light;
+}
+
+nav.block-menu {
+  width: 100%;
+  @extend .px-4;
+  @extend .px-lg-0;
+  @extend .py-3;
+  @extend .py-lg-0;
+
+  ul.menu {
+    display: flex;
+    @extend .flex-column;
+    @extend .flex-lg-row;
+    @extend .justify-content-center;
+
+    li {
+      @extend .mx-lg-3;
+
+      a {
+        padding: 5px 10px;
+        @include rem(18);
+        line-height: 1.6;
+      }
+      &:hover a {
+        background-color: $main;
+        color: $white;
+      }
+    }
+  }
+
+  > ul.menu {
+    > li {
+      @extend .mb-2;
+      @extend .mb-lg-0;
+    }
+  }
+  .menu-item--expanded {
+    list-style: none;
+
+    ul {
+      @extend .ml-4;
+      @extend .ml-lg-0;
+    }
+  }
+
+  @include media-breakpoint-up(lg) {
+    width: auto;
+    ul.menu {
+      li {
+        a {
+          @include rem(16);
+          line-height: initial;
+        }
+      }
+    }
+    .menu-item--expanded {
+      position: relative;
+
+      ul {
+        display: none;
+        background-color: $main;
+        position: absolute;
+        z-index: 100;
+        margin-left: 0;
+        padding: 10px;
+
+        li a {
+          color: $white;
+          white-space: nowrap;
+        }
+      }
+
+      &:hover {
+        ul {
+          display: block;
+        }
+      }
+    }
+  }
+}
+
+
+//orders
+#block-eurogarantlogo {
+  @extend .order-1;
+}
+
+
+
+
+@include media-breakpoint-down(md) {
+  .offcanvas-collapse {
+    position: fixed;
+    top: 80px;
+    bottom: 0;
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow-y: auto;
+    transition: -webkit-transform .3s ease-in-out;
+    transition: transform .3s ease-in-out;
+    transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+    transform: translateX(100%);
+    z-index: 100;
+  }
+
+  .menu-open .region-nav {
+    transform: translateX(0);
+  }
+}
+
+
+//Breadcrumb
+.breadcrumb {
+  a {
+    color: $white;
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  li {
+    color: $white;
+
+    &:before {
+      content: "/";
+    }
+  }
+}

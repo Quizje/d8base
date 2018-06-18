@@ -1,0 +1,14 @@
+.block-footer---contact {
+  flex-grow: 2;
+  @extend .mb-3;
+  @extend .mb-md-0;
+
+  h2, p {
+    @extend .my-0;
+    @extend .mb-1;
+  }
+
+  img {
+    @extend .mr-3;
+  }
+}

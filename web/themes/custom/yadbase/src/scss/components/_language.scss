@@ -1,0 +1,46 @@
+.block-language {
+  @extend .order-2;
+  @extend .order-md-3;
+  @extend .ml-md-auto;
+
+  display: flex;
+  align-items: center;
+
+  .links {
+    @extend .d-flex;
+    margin: 0;
+  }
+  li {
+    display: block;
+    width: 30px;
+    height: 22px;
+    background-size: cover;
+    margin-left: 10px;
+    transition: opacity 0.3s ease-in-out;
+    border: 1px solid #efefef;
+
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      font: 0/0 Arial;
+      color: transparent;
+    }
+
+    &.nl {
+      background-image: url(../images/icon-lang-nl.svg);
+    }
+    &.fr {
+      background-image: url(../images/icon-lang-fr.svg);
+    }
+    &:hover {
+      opacity: 0.5;
+      transition: opacity 0.3s ease-in-out;
+    }
+  }
+}
+
+.region-nav .block-language {
+  @extend .d-none;
+  @extend .d-lg-block;
+}

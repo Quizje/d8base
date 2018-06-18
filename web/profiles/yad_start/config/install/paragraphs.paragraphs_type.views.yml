@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: views
+label: Views
+icon_uuid: null
+description: 'Include a predefined overview (Views) to the page'
+behavior_plugins: {  }

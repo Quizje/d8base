@@ -1,0 +1,15 @@
+name: YADBase
+type: theme
+description: 'Base theme for You Are Digital websites'
+core: 8.x
+libraries:
+  - yadbase/global-styling
+# Defines the base theme
+base theme: classy
+regions:
+  header: Header
+  nav: Navigation
+  above_content: 'Above Content'
+  content: Content
+  sidebar_first: 'Sidebar first'
+  footer: Footer

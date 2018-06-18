@@ -1,0 +1,27 @@
+//Setup column layouts
+.p--width-even {
+  .col {
+    @extend .col-12;
+    @extend .col-md-6;
+  }
+}
+.p--width-odd-first {
+  .col:first-of-type {
+    @extend .col-12;
+    @extend .col-md-4;
+  }
+  .col:last-of-type {
+    @extend .col-12;
+    @extend .col-md-8;
+  }
+}
+.p--width-odd-last {
+  .col:first-of-type {
+    @extend .col-12;
+    @extend .col-md-8;
+  }
+  .col:last-of-type {
+    @extend .col-12;
+    @extend .col-md-4;
+  }
+}

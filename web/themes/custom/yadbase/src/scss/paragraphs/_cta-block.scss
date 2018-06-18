@@ -1,0 +1,23 @@
+.paragraph--type--call-to-action-blok {
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.50);
+  margin-bottom: 40px;
+
+  @include media-breakpoint-up(md) {
+    margin-bottom: 0;
+    height: 100%;
+  }
+
+  > img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+  > div img {
+    margin-right: 10px;
+  }
+
+  h2 {
+    margin: 0 0 5px 0;
+  }
+}

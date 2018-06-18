@@ -1,0 +1,52 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_column_content_hw
+    - paragraphs.paragraphs_type.full_width
+    - paragraphs.paragraphs_type.half_width
+  module:
+    - entity_reference_revisions
+id: paragraph.half_width.field_column_content_hw
+field_name: field_column_content_hw
+entity_type: paragraph
+bundle: half_width
+label: 'Column Content'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    negate: 1
+    target_bundles:
+      full_width: full_width
+      half_width: half_width
+    target_bundles_drag_drop:
+      views:
+        weight: 8
+        enabled: false
+      block:
+        weight: 9
+        enabled: false
+      call_to_action:
+        weight: 10
+        enabled: false
+      full_width:
+        enabled: true
+        weight: 11
+      half_width:
+        enabled: true
+        weight: 12
+      image:
+        weight: 13
+        enabled: false
+      text:
+        weight: 14
+        enabled: false
+      video:
+        weight: 15
+        enabled: false
+field_type: entity_reference_revisions

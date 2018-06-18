@@ -1,0 +1,59 @@
+//Import fonts
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+// Main style: import partials
+//Import Bootstrap required partials
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+//Import Bootstrap grid
+@import "node_modules/bootstrap/scss/grid";
+
+//Import Bootstrap utilities
+@import "node_modules/bootstrap/scss/utilities";
+
+//Import Bootstrap Nav
+@import "node_modules/bootstrap/scss/nav";
+@import "node_modules/bootstrap/scss/navbar";
+
+//Import Bootstrap components
+@import "node_modules/bootstrap/scss/buttons";
+
+
+//Custom includes
+@import "main/variables";
+@import "main/mixins";
+@import "main/main"; //Base file with main styles (typography, body, ..)
+@import "main/drupal"; //style Drupal components
+
+//Layout elements
+@import "layout/page_header";
+@import "layout/page_footer";
+@import "layout/layout";
+@import "layout/columns";
+@import "layout/contact";
+@import "main/nav";
+@import "layout/login";
+
+//Components
+@import "components/buttons";
+@import "components/forms";
+@import "components/tables";
+@import "components/language";
+@import "components/pager";
+@import "components/survey";
+
+//Blocks
+
+//Paragraphs
+@import "paragraphs/homepage-banner";
+@import "paragraphs/usp";
+@import "paragraphs/center-block";
+@import "paragraphs/cta-block";
+@import "paragraphs/downloads";
+
+//Nodes
+
+//Views

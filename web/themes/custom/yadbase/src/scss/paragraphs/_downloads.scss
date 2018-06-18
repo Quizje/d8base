@@ -1,0 +1,47 @@
+.paragraph--type--downloads {
+
+    .paragraph--type--full-width & {
+      @extend .py-3;
+      @extend .py-md-5;
+    }
+
+    > .paragraph-title {
+      @extend h2;
+      display: block;
+      @extend .mb-4;
+    }
+
+}
+.paragraph--type--download-file {
+
+  //&:hover {
+  //  background-color: $main;
+  //  @extend .bgt-dark;
+  //
+  //}
+  //.bgt-dark & {
+  //  &:hover {
+  //    background-color: $white;
+  //    @extend .bgt-light;
+  //  }
+  //}
+
+  .paragraph-title {
+    @extend p;
+    @extend .py-2;
+    @extend .mb-1;
+    @extend .pr-4;
+    color: $main;
+    border-bottom: 1px solid $color-border-light;
+    width: 100%;
+    background: url(../images/icon-download.svg) center right no-repeat;
+    display: block;
+
+    .bgt-dark &{
+      filter: grayscale(100%) brightness(5);
+    }
+
+  }
+}
+
+

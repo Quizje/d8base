@@ -1,0 +1,8 @@
+langcode: en
+status: true
+dependencies: {  }
+id: half_width
+label: 'Half width'
+icon_uuid: null
+description: 'Create a wrapper for a two-column layout (Either 50/50, 33/66 or 66/33)'
+behavior_plugins: {  }

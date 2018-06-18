@@ -1,0 +1,40 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.half_width.field_column_content_hw
+    - field.field.paragraph.half_width.field_p_background
+    - field.field.paragraph.half_width.field_p_column_width
+    - paragraphs.paragraphs_type.half_width
+  module:
+    - entity_reference_revisions
+    - options
+id: paragraph.half_width.default
+targetEntityType: paragraph
+bundle: half_width
+mode: default
+content:
+  field_column_content_hw:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  field_p_background:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_p_column_width:
+    weight: 1
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+hidden: {  }

@@ -1,0 +1,47 @@
+.field--name-field-contact-block{
+  @extend .row;
+
+  .field__item {
+    @extend .col-md-6;
+    @extend .col-lg-4;
+    @extend .mb-3;
+    @extend .mb-lg-0;
+    align-items: stretch;
+
+    .inner {
+      @extend .bgc-tertiary;
+      @extend .bgt-light;
+      padding: $grid-gutter-width / 2;
+      height: 100%;
+
+    }
+
+    &:first-child {
+      @extend .col-md-12;
+      @extend .col-lg-4;
+      .inner {
+        @extend .bgc-primary;
+        @extend .bgt-dark;
+
+      }
+    }
+  }
+}
+
+.webform-submission-contact-form  {
+
+  @include media-breakpoint-up(md) {
+    .form-item-name,
+    .form-item-email {
+      display: inline-block;
+      width: 48%;
+    }
+    .form-item-name {
+      margin-right: 3%;
+    }
+  }
+  textarea,
+  input {
+    width: 100%;
+  }
+}

@@ -1,0 +1,23 @@
+.path-user {
+  main .layout-content {
+    @extend .container;
+  }
+  .block-system-main-block {
+    @extend .row;
+    @extend .justify-content-center;
+  }
+  .user-login-form {
+    @extend .col-md-4;
+  }
+
+  .form-submit {
+    @extend .btn;
+    @extend .btn-primary;
+  }
+
+  .region-above-content {
+    position: static;
+    @extend .bgt-light;
+  }
+
+}

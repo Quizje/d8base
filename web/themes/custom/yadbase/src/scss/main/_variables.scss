@@ -1,0 +1,27 @@
+//Font
+$base-font-size: 16;
+$font-default: 'Roboto', sans-serif;
+$font-header: 'Montserrat', sans-serif;
+
+//Colours
+$color-font: #484848;
+$color-font-page-header: $white;
+$color-primary: #ff0000;
+$color-secondary: #00ff00;
+$color-tertiary: #0000ff;
+$color-border-light: #e7e7e7;
+$color-border-darker: #979797;
+
+
+
+
+
+//Shortcuts
+$main: $color-primary;
+$text: $color-font;
+
+//Bootstrap overrides
+$primary: $color-primary;
+$secondary: $color-secondary;
+$gray-700: $color-font;
+$secondary: $gray-700;

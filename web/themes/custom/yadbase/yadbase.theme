@@ -1,0 +1,47 @@
+<?php
+/**
+ * Implements template_preprocess_input
+ * @param $variables
+ * Remove size attribute from form inputs
+ */
+function yadbase_preprocess_input(&$vars) {
+  // Remove size attribute
+  if (isset($vars['attributes']['size'])) {
+    unset($vars['attributes']['size']);
+  }
+
+}
+
+/**
+ * Implements template_preprocess_image().
+ * @param $vars
+ * Remove height and width attributes from images (let CSS do the magic)
+ */
+function yadbase_preprocess_image(&$vars) {
+  unset(
+    $vars['width'],
+    $vars['height'],
+    $vars['attributes']['width'],
+    $vars['attributes']['height']
+  );
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK_alter() for form templates.
+ * @param array $suggestions
+ * @param array $variables
+ */
+function yadbase_theme_suggestions_block_alter(array &$suggestions, array $variables) {
+    // Block suggestions for custom block bundles.
+    if (isset($variables['elements']['content']['#block_content'])) {
+        array_splice($suggestions, 1, 0, 'block__bundle__' . $variables['elements']['content']['#block_content']->bundle());
+    }
+}
+
+/**
+ * Implements hook_form_alter().
+ * Add Search placeholder to default seach box
+ */
+function yadbase_form_search_block_form_alter(&$form, \Drupal\Core\Form\FormStateInterface $form_state) {
+    $form['keys']['#attributes']['placeholder'] = t('Search');
+}

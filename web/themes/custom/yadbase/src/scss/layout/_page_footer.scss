@@ -1,0 +1,18 @@
+footer[role="contentinfo"] {
+  @extend .bgt-dark;
+  @extend .py-3;
+  @extend .py-md-4;
+  background-color: $black;
+
+  .region-footer {
+    @extend .container;
+    @extend .d-flex;
+
+    flex-direction: column;
+
+    @include media-breakpoint-up(md) {
+      justify-content: flex-end;
+      flex-direction: row;
+    }
+  }
+}

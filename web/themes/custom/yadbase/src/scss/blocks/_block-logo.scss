@@ -1,0 +1,13 @@
+#block-eurogarantlogo {
+  color: $main;
+  text-transform: uppercase;
+  @include rem(24);
+}
+#block-febelcarlogo {
+  img {
+    max-width: 171px;
+  }
+  p {
+    margin: 0;
+  }
+}

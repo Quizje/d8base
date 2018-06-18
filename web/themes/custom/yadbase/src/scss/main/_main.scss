@@ -1,0 +1,147 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  min-height: 100%;
+  height: 100%;
+}
+
+body {
+  @include rem(16);
+  font-weight: normal;
+  font-family: $font-default;
+  color: $text;
+  padding-top: 80px;
+}
+
+h1 {
+  color: $white;
+  font-weight: 700;
+  @include rem(24);
+  font-family: $font-header;
+  margin: 0;
+  padding: 0.67em 0;
+
+  @include media-breakpoint-up(md) {
+    @include rem(32);
+  }
+}
+h2 {
+  color: $main;
+  font-weight: 700;
+  @include rem(22);
+  font-family: $font-header;
+  margin-top: 0;
+  @include media-breakpoint-up(md) {
+    @include rem(24);
+  }
+}
+h3 {
+  color: $main;
+  font-weight: 700;
+  @include rem(18);
+  font-family: $font-header;
+  margin-top: 0;
+}
+h4 {
+  color: $main;
+  font-weight: 700;
+  @include rem(16);
+  font-family: $font-header;
+  margin-top: 0;
+}
+h5 {}
+h6 {}
+p {
+  font-family: $font-default;
+  @include rem(16);
+  color: $text;
+  font-weight: normal;
+  line-height: 1.4;
+}
+a {
+  color: $main;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+img {
+  object-fit: cover;
+  max-width: 100%;
+}
+
+.bgt-dark {
+  h1, h2, h3, h4, h5, h6, p, a, li {
+    color: $white;
+  }
+}
+
+
+main li {
+  line-height: 2;
+}
+
+//Refactor
+.bgc-primary {
+  background-color: $main;
+}
+.bgc-secondary {
+  background-color: $color-secondary;
+}
+.bgc-tertiary {
+  background-color: $color-tertiary;
+}
+.bgc-black {
+  background-color: $black;
+}
+.bgc-white {
+  background-color: $white;
+}
+
+.bgt-dark {
+  color: $white;
+
+  h1, h2,h3, h4, p {
+    color: $white;
+  }
+}
+.bgt-light {
+   color: $text;
+ }
+
+@include media-breakpoint-up(lg) {
+  .bgc-lg-none {
+    background-color: transparent;
+  }
+  .bgt-lg-light {
+    color: $text;
+
+    h1, h2, h3, h4, h5, h6, a {
+      color: $text;
+    }
+  }
+}
+
+//Refactor
+.d-fb-0 {
+  flex-basis: 0;
+}
+.d-fg-1 {
+  flex-grow: 1;
+}
+.d-fg-2 {
+  flex-grow: 2;
+}
+.d-fg-4 {
+  flex-grow: 4;
+}
+
+.nocontentmargin {
+  p {
+    margin: 0;
+  }
+}

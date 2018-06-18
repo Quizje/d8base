@@ -1,0 +1,19 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: editor
+label: editor
+description: ''
+attributes: {  }
+matchers:
+  12a77074-0a6a-4f6d-a758-fc286fd34264:
+    uuid: 12a77074-0a6a-4f6d-a758-fc286fd34264
+    id: 'entity:node'
+    weight: 0
+    settings:
+      result_description: ''
+      bundles: {  }
+      group_by_bundle: true
+      include_unpublished: false

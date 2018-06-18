@@ -1,0 +1,18 @@
+
+main {
+  background: url(../images/banner_default.jpg) top center no-repeat;
+
+  .path-frontpage &  {
+    background: none;
+  }
+}
+
+.page-image,
+.region-above-content {
+  height: 150px;
+
+  img {
+    height: 150px;
+    object-fit: cover;
+  }
+}

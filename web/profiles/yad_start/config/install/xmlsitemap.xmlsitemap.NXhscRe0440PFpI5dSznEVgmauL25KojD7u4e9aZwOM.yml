@@ -1,0 +1,10 @@
+langcode: en
+status: true
+dependencies: {  }
+id: NXhscRe0440PFpI5dSznEVgmauL25KojD7u4e9aZwOM
+label: 'http://yadbase.yad/core/install.php/'
+chunks: 1
+links: 1
+max_filesize: 295
+context: {  }
+updated: 1525967061

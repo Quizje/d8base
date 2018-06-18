@@ -1,0 +1,21 @@
+.node--type-bedrijf {
+
+  .field {
+    @extend .my-3;
+  }
+  .field--label-above {
+    display: flex;
+
+    .field__label {
+      @extend .mr-3;
+    }
+    .field__item {
+
+    }
+  }
+  .text-formatted {
+    p {
+      margin: 0;
+    }
+  }
+}
