@@ -28,6 +28,7 @@ dependencies:
   - breakpoint
   - ckeditor
   - config
+  - contact
   - contextual
   - datetime
   - dblog
