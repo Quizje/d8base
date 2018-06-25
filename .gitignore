@@ -5,6 +5,7 @@
 /web/modules/contrib/
 /web/themes/contrib/
 /web/themes/*/*/node_modules/
+/web/themes/custom/*/dist/
 /web/profiles/contrib/
 #/web/libraries/
 
