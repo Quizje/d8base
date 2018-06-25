@@ -4,6 +4,7 @@
 /web/core/
 /web/modules/contrib/
 /web/themes/contrib/
+/web/themes/*/*/node_modules/
 /web/profiles/contrib/
 #/web/libraries/
 
