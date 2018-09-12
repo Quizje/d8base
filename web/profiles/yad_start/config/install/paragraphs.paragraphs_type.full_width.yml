@@ -2,7 +2,7 @@ langcode: en
 status: true
 dependencies: {  }
 id: full_width
-label: 'Full width'
+label: 'One Column'
 icon_uuid: null
 description: 'Create a wrapper for a component that uses the full page width'
 behavior_plugins: {  }
