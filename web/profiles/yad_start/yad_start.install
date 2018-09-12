@@ -24,9 +24,9 @@ function yad_start_install() {
         ->save();
 
     //SET YAD BASE as default theme -> create theme. Change to YAD_SITE
-    /*\Drupal::configFactory()
+    \Drupal::configFactory()
         ->getEditable('system.theme')
         ->set('default', 'yad_base')
         ->save();
-    */
+
 }
